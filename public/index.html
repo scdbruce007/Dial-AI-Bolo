@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bolo</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>बोलिए, मैं सुन रही हूँ</h1>
+      <p>Ask anything, or book an Ather test ride. Hindi, English or Hinglish.</p>
+    </header>
+
+    <section class="call" aria-label="Call controls">
+      <button id="talk" data-state="idle">Talk</button>
+      <p id="status" role="status">Tap Talk and allow the microphone</p>
+    </section>
+
+    <ul class="examples" aria-label="Things you can say">
+      <li lang="hi">“मैं किसान हूँ, अपनी सब्ज़ी शहर में कैसे बेचूँ?”</li>
+      <li lang="hi">“कल शाम JP Nagar के पास Rizta की test ride चाहिए”</li>
+    </ul>
+
+    <section id="cards" aria-live="polite"></section>
+    <ol id="transcript" aria-label="Live transcript"></ol>
+
+    <footer>Prototype, not affiliated with Ather Energy. Test-ride bookings are mock bookings and are not sent to Ather. Conversations are processed by Sarvam and Anthropic.</footer>
+  </main>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

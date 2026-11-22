@@ -1,0 +1,1046 @@
+{
+  "source": "https://www.atherenergy.com/locate-ather-dealer/electric-scooters-in-bengaluru",
+  "retrieved": "2026-11-22",
+  "note": "From the store data embedded in the source page (SALES branches): 23 tagged Bengaluru, including 3 the page does not display (Bommasandra, Gottigere, Nelamangala), plus 3 outskirts towns. Times are IST, 24-hour. Not verified by phone.",
+  "showrooms": [
+    {
+      "id": 4683,
+      "name": "Bellandur",
+      "outskirts": false,
+      "address": "Survey No 79/7, Service Road, Sarjapur Main Rd, beside Xochi Restaurant, Bellandur, Bengaluru, Karnataka 560103",
+      "pincode": "560103",
+      "phone": "+919228849796",
+      "lat": 12.928452,
+      "lng": 77.67243,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 4800,
+      "name": "Bommasandra",
+      "outskirts": false,
+      "address": "S N B Complex, Plot No 254, Hosur Rd, near Nandhana Palace Hotel, Industrial Area, Bommasandra Industrial Area, Bommasandra, Bengaluru, Karnataka 560099",
+      "pincode": "560099",
+      "phone": "+919240083596",
+      "lat": 12.807386,
+      "lng": 77.698066,
+      "hours": {
+        "mon": {
+          "open": "10:00",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "10:00",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "10:00",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "10:00",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "10:00",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "10:00",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "10:00",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 2980,
+      "name": "Electronic City",
+      "outskirts": false,
+      "address": "Hosur Road, Srinivasa Nagar, Hal Layout, Singasandra, Bengaluru, Karnataka 560068",
+      "pincode": "560068",
+      "phone": "+919240013858",
+      "lat": 12.88566,
+      "lng": 77.642548,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 4824,
+      "name": "Frazer Town",
+      "outskirts": false,
+      "address": "Ground Floor, No 88/1, Coles Rd, Pulikeshi Nagar, Frazer Town, Bengaluru, Karnataka 560005",
+      "pincode": "560005",
+      "phone": "+919240083582",
+      "lat": 12.997033,
+      "lng": 77.611219,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "19:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "19:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "19:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "19:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "19:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "19:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "19:30"
+        }
+      }
+    },
+    {
+      "id": 449,
+      "name": "Gottigere",
+      "outskirts": false,
+      "address": "103/1, Basavanapura Gate, Gottigere, Bengaluru, Karnataka 560083",
+      "pincode": "560083",
+      "phone": "+919228849805",
+      "lat": 12.849044,
+      "lng": 77.588403,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 258,
+      "name": "Hebbal",
+      "outskirts": false,
+      "address": "2HPQ+4J7, Bellary Rd, Vinayak Nagar, Hebbal, Bengaluru, Karnataka 560024",
+      "pincode": "560024",
+      "phone": "+919240013893",
+      "lat": 13.035524,
+      "lng": 77.589029,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 539,
+      "name": "Hennur",
+      "outskirts": false,
+      "address": "Ground Floor, Adam Zenith, No 729/11/1, Horamavu Agara Rd, near Nayara Petrol Pump, vadarpalya, Hennur Gardens, Bengaluru, Karnataka 560043",
+      "pincode": "560043",
+      "phone": "+919240013822",
+      "lat": 13.038891,
+      "lng": 77.64164,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 4789,
+      "name": "HSR Layout",
+      "outskirts": false,
+      "address": "13th, 14, 9th Main, 6th Cross Rd, below The Elite Royale, Sector 6, HSR Layout, Bengaluru, Karnataka 560102",
+      "pincode": "560102",
+      "phone": "+919240083929",
+      "lat": 12.916098,
+      "lng": 77.634609,
+      "hours": {
+        "mon": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "tue": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "wed": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "thu": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "fri": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "sat": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "sun": {
+          "open": "10:00",
+          "close": "20:00"
+        }
+      }
+    },
+    {
+      "id": 139,
+      "name": "Indiranagar",
+      "outskirts": false,
+      "address": "53, 100 Feet Rd, Defence Colony, Indiranagar, Bengaluru, Karnataka 560038",
+      "pincode": "560038",
+      "phone": "+919240013865",
+      "lat": 12.976036,
+      "lng": 77.641203,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 250,
+      "name": "Jayanagar",
+      "outskirts": false,
+      "address": "Door no 49, 1st main road, Rashtriya Vidyalaya Rd, 2nd Block, Jayanagar, Bengaluru, Karnataka 560004",
+      "pincode": "560004",
+      "phone": "+919240013800",
+      "lat": 12.942762,
+      "lng": 77.580314,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 2977,
+      "name": "JP Nagar",
+      "outskirts": false,
+      "address": "292, 15th cross, JP Nagar 5th phase (Opp HP Petrol Pump), Bengaluru, Karnataka, 560078",
+      "pincode": "560078",
+      "phone": "+919240013788",
+      "lat": 12.906429,
+      "lng": 77.590924,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 4700,
+      "name": "Kengeri",
+      "outskirts": false,
+      "address": "No 249/3, Bda Complex, Upanagara, opposite BMTC Bus Stop, Stage I, Kengeri, Bengaluru, Karnataka 560060",
+      "pincode": "560060",
+      "phone": "+919240083008",
+      "lat": 12.916767,
+      "lng": 77.482165,
+      "hours": {
+        "mon": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "tue": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "wed": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "thu": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "fri": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "sat": {
+          "open": "10:00",
+          "close": "20:00"
+        },
+        "sun": {
+          "open": "10:00",
+          "close": "20:00"
+        }
+      }
+    },
+    {
+      "id": 4687,
+      "name": "Kodathi Gate",
+      "outskirts": false,
+      "address": "Kodathi Gate, Plot No 112/3, Sarjapur - Marathahalli Rd, next to Zoyes Cafe, Bengaluru, Karnataka 560035",
+      "pincode": "560035",
+      "phone": "+919240030976",
+      "lat": 12.897869,
+      "lng": 77.717477,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 403,
+      "name": "Koramangala",
+      "outskirts": false,
+      "address": "474, 6th Block, 80 feet road, 6th Block, koramangala, Bangalore, Bengaluru, Karnataka 560095",
+      "pincode": "560095",
+      "phone": "+919240013811",
+      "lat": 12.940359,
+      "lng": 77.624959,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 111,
+      "name": "Marathahalli",
+      "outskirts": false,
+      "address": "Ground Floor , Khata No.310/35, kadubissanahalli village Varthur Hobli, East, taluk, Marathahalli, Bengaluru, Karnataka 560103",
+      "pincode": "560103",
+      "phone": "+919240013820",
+      "lat": 12.9416,
+      "lng": 77.696614,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 465,
+      "name": "Naagarabhaavi",
+      "outskirts": false,
+      "address": "25, 80 feet outer ring road Papareddypalya, 2nd Stage, Naagarabhaavi, Bengaluru, Karnataka 560072",
+      "pincode": "560072",
+      "phone": "+919240013860",
+      "lat": 12.968617,
+      "lng": 77.505755,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 2900,
+      "name": "Nagasandra",
+      "outskirts": false,
+      "address": "Ground Floor, No 568, National Highway, Chokkasandra, Nagasandra, Bengaluru, Karnataka 560057",
+      "pincode": "560057",
+      "phone": "+919228849701",
+      "lat": 13.042274,
+      "lng": 77.514949,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "17:00"
+        }
+      }
+    },
+    {
+      "id": 4293,
+      "name": "Nelamangala",
+      "outskirts": false,
+      "address": "No 112/2, Sai Complex, opposite Kanti Sweets, Binnamangala, Jyothi Nagar, Arasinakunte, Bengaluru, Karnataka 562123",
+      "pincode": "562123",
+      "phone": "+919240013945",
+      "lat": 13.088634,
+      "lng": 77.411555,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 2979,
+      "name": "Rajajinagar",
+      "outskirts": false,
+      "address": "No. 0025 (Old no.1003), 59th C Cross, 4th M Block, Sriram Mandir, Dr. Rajkumar Road, Rajajinagar, Bengaluru, Karnataka 560010",
+      "pincode": "560010",
+      "phone": "+919240013794",
+      "lat": 12.982635,
+      "lng": 77.560689,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 4205,
+      "name": "RR Nagar",
+      "outskirts": false,
+      "address": "No 285/B, 12th Cross Rd, near Ideal Home Circle, Remco Bhel Layout, Ideal Homes Twp, Rajarajeshwari Nagar, Bengaluru, Karnataka 560098",
+      "pincode": "560098",
+      "phone": "+919228849674",
+      "lat": 12.925206,
+      "lng": 77.515275,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 4276,
+      "name": "Vajarahalli",
+      "outskirts": false,
+      "address": "4, Kanakapura Main Rd, next to DMart, Vajarahalli Village, Bangalore City Municipal Corporation Layout, Vajarahalli, Bengaluru, Karnataka 560062.",
+      "pincode": "560062",
+      "phone": "+919228849842",
+      "lat": 12.875894,
+      "lng": 77.543965,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 141,
+      "name": "Whitefield",
+      "outskirts": false,
+      "address": "Whitefield 4E, Anand Enterprises, Puttappa industrial estate Whitefield road, Mahadevapura, Bengaluru, 560048",
+      "pincode": "560048",
+      "phone": "+919240013871",
+      "lat": 12.998719,
+      "lng": 77.690895,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 72,
+      "name": "Yelahanka",
+      "outskirts": false,
+      "address": "No.796, MIG, 2nd Phase, Yelahanka New Town, Bengaluru, Karnataka 560064",
+      "pincode": "560064",
+      "phone": "+919240013872",
+      "lat": 13.099941,
+      "lng": 77.578694,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": {
+          "open": "09:30",
+          "close": "20:30"
+        }
+      }
+    },
+    {
+      "id": 4803,
+      "name": "Bidadi",
+      "outskirts": true,
+      "address": "Ground Floor, next to Sri Shasta Hotel, Bidadi, Bengaluru, Karnataka 562109",
+      "pincode": "562109",
+      "phone": "+919240013973",
+      "lat": 12.793004,
+      "lng": 77.380308,
+      "hours": {
+        "mon": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "tue": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "wed": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "thu": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "fri": {
+          "open": "10:00",
+          "close": null
+        },
+        "sat": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "sun": {
+          "open": "10:00",
+          "close": "19:00"
+        }
+      },
+      "note": "Ather lists Friday closing as 07:00, an apparent error; null means unknown."
+    },
+    {
+      "id": 4324,
+      "name": "Devanahalli",
+      "outskirts": true,
+      "address": "Ward No 10, Ground Floor, 3rd, Bellary Road, opposite Shell Petrol Pump, Devanahalli, Bengaluru, Devanahalli, Karnataka 562110",
+      "pincode": "562110",
+      "phone": "+919240013683",
+      "lat": 13.283149,
+      "lng": 77.718208,
+      "hours": {
+        "mon": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "tue": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "wed": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "thu": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "fri": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sat": {
+          "open": "09:30",
+          "close": "20:30"
+        },
+        "sun": null
+      },
+      "note": "Ather lists no Sunday hours; null means unknown."
+    },
+    {
+      "id": 4850,
+      "name": "Hoskote",
+      "outskirts": true,
+      "address": "Ground Floor, Mangalore - Villupuram Rd, beside Bhagat Hero, M V Extenstion, Hoskote, Bengaluru, Karnataka 562114",
+      "pincode": "562114",
+      "phone": "+919240083899",
+      "lat": 13.068027,
+      "lng": 77.778266,
+      "hours": {
+        "mon": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "tue": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "wed": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "thu": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "fri": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "sat": {
+          "open": "10:00",
+          "close": "19:00"
+        },
+        "sun": {
+          "open": "10:00",
+          "close": "19:00"
+        }
+      }
+    }
+  ]
+}

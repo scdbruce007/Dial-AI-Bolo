@@ -1,0 +1,54 @@
+<title>Bolo Demo QR</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: one screen for a judge to read at arm's length. QR on one side, what to do and say on the other. Single green look, matching the Talk page. */
+:root {
+  --bg: #123d2b; --fg: #f2f7f3; --muted: #b5cfbf; --say: #1b5039; --paper: #fff; --focus: #f2c14e;
+  --display: "Kohinoor Devanagari", "Noto Sans Devanagari", system-ui, sans-serif;
+  --body: system-ui, "Noto Sans Devanagari", sans-serif;
+  color-scheme: dark;
+}
+html { background: var(--bg); }
+body { background: var(--bg); color: var(--fg); font: 18px/1.45 var(--body); }
+main {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 28px 56px;
+  padding-block: 28px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+main:fullscreen { background: var(--bg); align-content: center; overflow: auto; }
+.qr { display: block; width: min(480px, 70vh, 100%); aspect-ratio: 1; background: var(--paper); border-radius: 12px; }
+.guide { display: grid; gap: 16px; flex: 0 1 460px; min-width: 0; }
+h1 { margin: 0; font: 700 44px/1.3 var(--display); text-wrap: balance; }
+ol { margin: 0; padding-left: 1.4em; font-size: 22px; }
+.label { margin: 0; color: var(--muted); font-size: 16px; }
+.say { margin: 0; padding: 10px 14px; background: var(--say); border-radius: 8px; overflow-wrap: anywhere; }
+.say span { display: block; color: var(--muted); font-size: 15px; }
+.note { margin: 0; color: var(--muted); font-size: 13px; }
+button { justify-self: start; padding: 8px 14px; border: 1px solid var(--muted); border-radius: 8px; background: transparent; color: var(--fg); font: 15px var(--body); cursor: pointer; }
+button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+main:fullscreen button { display: none; }
+</style>
+<main id="screen">
+  <img class="qr" alt="QR code that opens the Bolo voice assistant" src="{{QR}}">
+  <div class="guide">
+    <h1>बोलिए। Just talk.</h1>
+    <ol>
+      <li>Scan with your phone's camera</li>
+      <li>Tap Talk and allow the microphone</li>
+      <li>Wait for the greeting, then speak</li>
+    </ol>
+    <p class="label">Try either of these, in Hindi, English or Hinglish</p>
+    <p class="say" lang="hi">“मैं किसान हूँ, अपनी सब्ज़ी शहर में कैसे बेचूँ?”<span lang="en">I'm a farmer. How do I sell my vegetables in the city?</span></p>
+    <p class="say" lang="hi">“कल शाम 5 बजे JP Nagar के पास Rizta की test ride चाहिए”<span lang="en">I want a Rizta test ride near JP Nagar at 5 pm tomorrow.</span></p>
+    <p class="note">Prototype, not affiliated with Ather Energy. Bookings are mock bookings. Conversations are processed by Sarvam and Anthropic.</p>
+    <button id="fullscreen" type="button">Show full screen</button>
+  </div>
+</main>
+<script>
+  const screenEl = document.getElementById('screen');
+  document.getElementById('fullscreen').addEventListener('click', async () => {
+    try { await screenEl.requestFullscreen(); } catch { /* not available on this device */ }
+    try { await navigator.wakeLock.request('screen'); } catch { /* optional */ }
+  });
+</script>

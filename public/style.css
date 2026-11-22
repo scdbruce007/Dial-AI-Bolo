@@ -1,0 +1,30 @@
+:root { --bg:#f3f6f1; --ink:#17221b; --muted:#5b685f; --card:#fff; --line:#d8e0d6; --accent:#176b45; --stop:#b3372b; --user:#dcefe2; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg:#111713; --ink:#e7eee8; --muted:#9baaa0; --card:#1a231d; --line:#2c3930; --accent:#2c9463; --stop:#c4473a; --user:#204331; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.5 system-ui, "Noto Sans Devanagari", sans-serif; }
+main { max-width: 560px; margin: 0 auto; padding: 32px 16px calc(24px + env(safe-area-inset-bottom)); }
+header { text-align: center; }
+h1 { margin: 0 0 4px; font-size: 28px; line-height: 1.35; }
+header p, #status, footer, .meta { color: var(--muted); }
+header p { margin: 0; }
+.call { display: grid; justify-items: center; margin: 28px 0 16px; }
+#talk { width: 148px; height: 148px; border: 0; border-radius: 50%; background: var(--accent); color: #fff; font: 600 24px system-ui; cursor: pointer; }
+#talk[data-state="live"], #talk[data-state="busy"] { background: var(--stop); }
+#talk:focus-visible { outline: 3px solid var(--ink); outline-offset: 4px; }
+#talk:disabled { opacity: .5; cursor: default; }
+#status { min-height: 1.5em; margin: 12px 0 0; text-align: center; }
+.examples { list-style: none; margin: 0 0 20px; padding: 0; text-align: center; font-size: 15px; color: var(--muted); }
+body.in-call .examples { display: none; }
+.card { margin-bottom: 12px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 12px; background: var(--card); overflow-wrap: anywhere; }
+.card h2 { margin: 0 0 4px; font-size: 18px; }
+.card p { margin: 2px 0; }
+.card.booking { border: 2px solid var(--accent); }
+.card a { display: block; color: inherit; font-size: 14px; }
+.badge { float: right; padding: 2px 8px; border-radius: 6px; background: #f2c14e; color: #2b2208; font: 600 12px/1.6 system-ui; }
+.meta { font-size: 14px; }
+#transcript { list-style: none; margin: 16px 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+#transcript li { max-width: 86%; padding: 8px 12px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); overflow-wrap: anywhere; }
+#transcript li.user { align-self: flex-end; background: var(--user); }
+footer { margin-top: 28px; font-size: 12px; text-align: center; }
