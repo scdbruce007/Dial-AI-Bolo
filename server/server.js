@@ -1,11 +1,12 @@
-// Three listeners, all on 127.0.0.1:
+// On Railway (PORT is set): one listener. /tools/* takes Sarvam's IPs only, everything else needs the code.
+// On the Mac: three listeners, all on 127.0.0.1:
 //   3000  Talk page for this Mac. No code, not counted, never tunnelled.
 //   3002  The same page for the public tunnel. Needs the code from the QR link, and calls are limited.
 //   3001  The three agent tools. cloudflared points here and only Sarvam's IPs may call it.
 import fs from 'node:fs';
 import http from 'node:http';
 import path from 'node:path';
-import { ROOT, agentId } from './config.js';
+import { CLOUD_PORT, ROOT, agentId } from './config.js';
 import { answerQuestion } from './answer.js';
 import { bookTestRide, findShowroom } from './booking.js';
 import { COOKIE, createGuard } from './guard.js';
@@ -88,10 +89,10 @@ async function readBody(req) {
 }
 
 async function tools(req, res, url) {
-  // cloudflared connects from localhost, and Cloudflare sets this header itself.
-  // With no header, the request came from this machine (tests).
-  const ip = req.headers['cf-connecting-ip'];
-  if (ip && !SARVAM_IPS.has(ip)) {
+  // Each proxy sets its own header. Railway: X-Real-IP, always required.
+  // Mac: cloudflared connects from localhost, and no header means a request from this machine (tests).
+  const ip = req.headers[CLOUD_PORT ? 'x-real-ip' : 'cf-connecting-ip'];
+  if ((CLOUD_PORT || ip) && !SARVAM_IPS.has(ip)) {
     console.warn(`[tools] refused ${ip} ${url.pathname}`);
     return send(res, 403, { error: 'forbidden' });
   }
@@ -166,7 +167,7 @@ function publicPage(req, res, url) {
     return res.end();
   }
   if (!guard.validCode(guard.codeFromCookie(req.headers.cookie))) {
-    return send(res, 403, 'Please scan the QR code to open Bolo.', 'text/plain');
+    return send(res, 403, 'Please scan the QR code to open Dial AI - Bolo.', 'text/plain');
   }
   return page(req, res, url, true);
 }
@@ -191,7 +192,12 @@ async function page(req, res, url, limited) {
   send(res, 404, { error: 'not found' });
 }
 
-function listen(port, handler) {
+function cloud(req, res, url) {
+  if (url.pathname === '/health') return send(res, 200, { ok: true });
+  return url.pathname.startsWith('/tools/') ? tools(req, res, url) : publicPage(req, res, url);
+}
+
+function listen(port, handler, host = '127.0.0.1') {
   http.createServer(async (req, res) => {
     try {
       await handler(req, res, new URL(req.url, 'http://localhost'));
@@ -199,9 +205,13 @@ function listen(port, handler) {
       console.error(`[error] ${error.message}`);
       if (!res.headersSent) send(res, error.status ?? 500, { error: 'request failed' });
     }
-  }).listen(port, '127.0.0.1', () => console.log(`listening on http://localhost:${port}`));
+  }).listen(port, host, () => console.log(`listening on http://${host}:${port}`));
 }
 
-listen(PAGE_PORT, localPage);
-listen(PUBLIC_PORT, publicPage);
-listen(TOOLS_PORT, tools);
+if (CLOUD_PORT) {
+  listen(CLOUD_PORT, cloud, '0.0.0.0');
+} else {
+  listen(PAGE_PORT, localPage);
+  listen(PUBLIC_PORT, publicPage);
+  listen(TOOLS_PORT, tools);
+}

@@ -13,6 +13,7 @@ Imported from the claude.ai project "TPF Buildathon Nov 2026" and the Claude Cod
 - Showrooms are Bengaluru only, as exhaustive as possible: 23 in the city plus 3 on the outskirts (Devanahalli,
   Hoskote, Bidadi), in `docs/bengaluru-showrooms.json`. "Nearest" is matched from the caller's area.
 - Public link (Suyash, 22 Nov): secret code in the QR link and a 30-call limit. Calls end at 5 minutes.
+- Hosting (Suyash, 22 Nov): moved to Railway so judges can use it while the Mac is offline.
 
 ## Sarvam docs
 - MCP: https://docs.sarvam.ai/voice-agents/mcp.md

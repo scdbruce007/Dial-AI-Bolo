@@ -1,4 +1,4 @@
-// Writes the QR and link for judges. Usage: node scripts/make-qr.js https://<public-tunnel>.trycloudflare.com
+// Writes the QR and link for judges. Usage: node scripts/make-qr.js https://<app>.up.railway.app
 // Both files contain the access code, so they go in data/ (git-ignored) and the link is never printed.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -6,7 +6,7 @@ import QRCode from 'qrcode';
 import { ROOT } from '../server/config.js';
 
 const base = process.argv[2];
-if (!/^https:\/\/[a-z0-9-]+\.trycloudflare\.com$/.test(base ?? '')) {
+if (!/^https:\/\/[a-z0-9-]+\.(trycloudflare\.com|up\.railway\.app)$/.test(base ?? '')) {
   console.error('Usage: node scripts/make-qr.js https://<public-tunnel>.trycloudflare.com');
   process.exit(1);
 }

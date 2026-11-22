@@ -1,4 +1,4 @@
-# Bolo: AI assistant over a call
+# Dial AI - Bolo: AI assistant over a call
 
 Tap Talk and speak Hindi, Hinglish or English. One Sarvam voice agent does two jobs:
 - **Questions:** asks Claude Haiku 5.5 (with web search) and reads out the answer.
@@ -7,41 +7,33 @@ Tap Talk and speak Hindi, Hinglish or English. One Sarvam voice agent does two j
 
 ## How it fits together
 ```
-judge   ──signed-URL request──► cloudflared ──► localhost:3002 (code + 30-call limit, adds key) ──► Sarvam
-this Mac──signed-URL request──► localhost:3000 (no code, not counted, adds key) ───────────────► Sarvam
-browser ◄────────────────── live audio over WebSocket ─────────────────► Sarvam agent
-                                                                             │ API tools
-                      localhost:3001 ◄── cloudflared (Sarvam IPs only) ◄─────┘
-                        ├─ /tools/ask             Claude + web search
-                        ├─ /tools/find-showroom   docs/bengaluru-showrooms.json
-                        └─ /tools/book-test-ride  data/bookings.jsonl
+judge's browser ── code from QR link ──► Railway (30-call limit, adds key) ──► Sarvam signed URL
+judge's browser ◄──────────────── live audio over WebSocket ────────────────► Sarvam agent
+                                                                                   │ API tools
+                                     Railway /tools/* (Sarvam IPs only) ◄──────────┘
+                                       ├─ /tools/ask             Claude + web search
+                                       ├─ /tools/find-showroom   docs/bengaluru-showrooms.json
+                                       └─ /tools/book-test-ride  mock bookings on the /data volume
 ```
 
-## Run
-1. `npm start`
-2. `tools/cloudflared-download/cloudflared tunnel --no-autoupdate --url http://127.0.0.1:3001`
-3. **The tunnel URL changes on every restart.** Ask Claude Code to "update the tool URLs to <new URL>": it has to
-   update find_showroom, book_test_ride and ask_claude on the agent, then commit a new version.
-4. `tools/cloudflared-download/cloudflared tunnel --no-autoupdate --url http://127.0.0.1:3002`, then
-   `node scripts/make-qr.js <that URL>`. The QR is `data/bolo-qr.png`, the link `data/bolo-link.txt`.
-   Then ask Claude Code to republish `data/bolo-qr-page.html` to https://claude.ai/artifact/6c9EzyqbqJYr6gCZgC51ug, the page to show judges.
-5. On this Mac, use http://localhost:3000
+## Deploy
+Railway project `dial-ai-bolo`, service `bolo`, volume at `/data`.
+- Deploy: `railway up --service bolo --ci`
+- Variables: `SARVAM_API_KEY`, `SARVAM_ORG_ID`, `SARVAM_WORKSPACE_ID`, `ANTHROPIC_API_KEY`, `ACCESS_CODE`,
+  `DATA_DIR=/data`, `COUNTER_ROUND`
+- Reset the 30-call and 300-question counters: `railway variable set COUNTER_ROUND=<a new value> --service bolo`
+- Change the code: set a new `ACCESS_CODE`, put the same value in `data/access-code`, run
+  `node scripts/make-qr.js <the Railway URL>`, then republish the presenter page.
 
-Never point a tunnel at port 3000: it has no code or limit.
-
-## Public link limits
-- 30 calls and 300 Claude questions, counted in `data/usage.json`. Reset with
-  `echo '{"calls":0,"answers":0}' > data/usage.json` (no restart needed).
-- A call is counted when it starts, even if it drops straight away.
-- To cut off everyone who has the QR: delete `data/access-code`, restart the server, run `make-qr.js` again.
-
-The Mac must be awake and online.
+## On a laptop
+`npm start` serves the Talk page at http://localhost:3000. The agent's tools run on Railway, so the page's result
+cards stay empty locally. Never tunnel port 3000: it has no code or limit.
 
 ## Files
 | Path | What |
 |---|---|
 | `server/guard.js` | code and limits for the public link |
-| `server/server.js` | the three listeners, key-hiding route, tool access control |
+| `server/server.js` | listeners (one on Railway, three on a laptop), key-hiding route, tool access control |
 | `server/answer.js` | Claude prompt, search, timeouts |
 | `server/booking.js`, `server/areas.json` | nearest showroom, dates, hours, mock booking |
 | `public/` | Talk page |

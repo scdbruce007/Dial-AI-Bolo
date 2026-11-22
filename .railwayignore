@@ -1,0 +1,12 @@
+.env
+.env.*
+data/
+tools/
+node_modules/
+test/
+scripts/
+CLAUDE.md
+docs/*.md
+agent/prompt.md
+.claude/
+.git/

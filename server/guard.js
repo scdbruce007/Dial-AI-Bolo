@@ -2,21 +2,23 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { randomBytes, timingSafeEqual } from 'node:crypto';
-import { ROOT } from './config.js';
+import { dataDir } from './config.js';
 
 export const CALL_LIMIT = 30;
 // The call limit alone does not bound Anthropic spend: one caller can ask many questions, quickly.
 export const ANSWER_LIMIT = 300;
 export const COOKIE = 'bolo_code';
 
-export function createGuard(dir = process.env.DATA_DIR ?? path.join(ROOT, 'data')) {
+export function createGuard(dir = dataDir(), fixedCode = process.env.ACCESS_CODE) {
   fs.mkdirSync(dir, { recursive: true });
-  const usageFile = path.join(dir, 'usage.json');
+  // To reset the counters in the cloud, change COUNTER_ROUND: each round has its own file.
+  const round = (process.env.COUNTER_ROUND ?? '').replace(/\W/g, '');
+  const usageFile = path.join(dir, round ? `usage-${round}.json` : 'usage.json');
   const codeFile = path.join(dir, 'access-code');
 
-  if (!fs.existsSync(codeFile)) fs.writeFileSync(codeFile, randomBytes(16).toString('base64url'), { mode: 0o600 });
-  const code = fs.readFileSync(codeFile, 'utf8').trim();
-  if (code.length < 20) throw new Error('data/access-code is too short. Delete it to generate a new one.');
+  if (!fixedCode && !fs.existsSync(codeFile)) fs.writeFileSync(codeFile, randomBytes(16).toString('base64url'), { mode: 0o600 });
+  const code = (fixedCode || fs.readFileSync(codeFile, 'utf8')).trim();
+  if (code.length < 20) throw new Error('The access code is too short.');
 
   // Read on every use, so a manual reset needs no restart. An unreadable file throws, which refuses the call.
   const read = () => (fs.existsSync(usageFile) ? JSON.parse(fs.readFileSync(usageFile, 'utf8')) : { calls: 0, answers: 0 });
@@ -31,6 +33,7 @@ export function createGuard(dir = process.env.DATA_DIR ?? path.join(ROOT, 'data'
     if (!Number.isInteger(usage[name]) || usage[name] >= limit) return false;
     usage[name] += 1;
     write(usage);
+    console.log(`[limit] ${name} ${usage[name]}/${limit}`);
     return true;
   }
 

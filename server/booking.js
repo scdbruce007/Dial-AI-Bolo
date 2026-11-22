@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { randomInt } from 'node:crypto';
-import { ROOT, readJSON } from './config.js';
+import { dataDir, readJSON } from './config.js';
 
 const { showrooms } = readJSON('docs/bengaluru-showrooms.json');
 const { areas } = readJSON('server/areas.json');
@@ -229,7 +229,7 @@ export function bookTestRide({ showroom, date, time, vehicle, language } = {}, {
 }
 
 function persist(booking) {
-  const dir = path.join(ROOT, 'data');
+  const dir = dataDir();
   fs.mkdirSync(dir, { recursive: true });
   fs.appendFileSync(path.join(dir, 'bookings.jsonl'), `${JSON.stringify(booking)}\n`);
 }
